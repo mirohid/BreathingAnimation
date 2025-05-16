@@ -1,24 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BreathingAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLx-O1-0Bw">
+                                <rect key="frame" x="16" y="728" width="361" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-NL-q36">
+                                        <rect key="frame" x="135.66666666666666" y="-20" width="90" height="90"/>
+                                        <color key="backgroundColor" red="0.1764705882352941" green="0.49803921568627452" blue="0.56470588235294117" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="bc9-6e-uO7"/>
+                                            <constraint firstAttribute="width" constant="90" id="kgm-Tg-5bQ"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame" translatesAutoresizingMaskIntoConstraints="NO" id="VRn-pJ-Y3X">
+                                        <rect key="frame" x="145.66666666666666" y="-10" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="8AO-GU-llY"/>
+                                            <constraint firstAttribute="width" constant="70" id="sxN-d4-Jum"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mingcute_send-fill" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-aF-FzO">
+                                        <rect key="frame" x="8" y="8" width="53" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="53" id="6fX-cc-PLH"/>
+                                            <constraint firstAttribute="height" constant="34" id="j2t-5p-e7F"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mingcute_send-fill (1)" translatesAutoresizingMaskIntoConstraints="NO" id="tHp-Ak-6FE">
+                                        <rect key="frame" x="300" y="8" width="53" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="H5C-Nb-tfJ"/>
+                                            <constraint firstAttribute="width" constant="53" id="bZl-IU-5Za"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.49803921568627452" blue="0.56470588235294117" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VRn-pJ-Y3X" firstAttribute="centerX" secondItem="sLx-O1-0Bw" secondAttribute="centerX" id="3Lq-3i-VHl"/>
+                                    <constraint firstItem="N0a-NL-q36" firstAttribute="centerX" secondItem="sLx-O1-0Bw" secondAttribute="centerX" id="6Jr-fN-rJQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="6A5-aF-FzO" secondAttribute="bottom" constant="8" id="7FN-Ba-StE"/>
+                                    <constraint firstAttribute="height" constant="50" id="DRg-vP-jno"/>
+                                    <constraint firstItem="N0a-NL-q36" firstAttribute="centerY" secondItem="sLx-O1-0Bw" secondAttribute="centerY" id="OVS-9R-ZrV"/>
+                                    <constraint firstItem="VRn-pJ-Y3X" firstAttribute="centerY" secondItem="sLx-O1-0Bw" secondAttribute="centerY" id="bNr-jB-FoV"/>
+                                    <constraint firstAttribute="trailing" secondItem="tHp-Ak-6FE" secondAttribute="trailing" constant="8" id="uaW-Uy-VqY"/>
+                                    <constraint firstAttribute="bottom" secondItem="tHp-Ak-6FE" secondAttribute="bottom" constant="8" id="y7z-lA-12l"/>
+                                    <constraint firstItem="6A5-aF-FzO" firstAttribute="leading" secondItem="sLx-O1-0Bw" secondAttribute="leading" constant="8" id="yOg-Rm-Mbo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sLx-O1-0Bw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Aw-h6-LYb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sLx-O1-0Bw" secondAttribute="trailing" constant="16" id="GWQ-KP-fGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sLx-O1-0Bw" secondAttribute="bottom" constant="40" id="QN2-zg-8gH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgView" destination="N0a-NL-q36" id="Icv-zr-dad"/>
+                        <outlet property="imageView" destination="VRn-pJ-Y3X" id="Maa-PZ-4Ah"/>
+                        <outlet property="mainView" destination="sLx-O1-0Bw" id="rDL-6r-4WB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Frame" width="70" height="70"/>
+        <image name="mingcute_send-fill" width="70" height="38"/>
+        <image name="mingcute_send-fill (1)" width="70" height="38"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
