@@ -148,24 +148,60 @@
                                     <constraint firstItem="R7J-bR-4Nf" firstAttribute="leading" secondItem="Qtf-xZ-PGA" secondAttribute="leading" constant="8" id="zdQ-x4-q3i"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3d-An-UKf">
+                                <rect key="frame" x="49.000000000000007" y="505" width="75.666666666666686" height="45"/>
+                                <color key="backgroundColor" red="0.32744550704956055" green="0.9641309380531311" blue="0.091830171644687653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zmO-ak-sYW"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startAnimationTAP:" destination="GBd-8q-mUi" eventType="touchUpInside" id="hs2-o6-zVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BN-gz-0L5">
+                                <rect key="frame" x="282" y="505" width="73" height="45"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="iMv-U5-XvJ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stop">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopAnimationTAP:" destination="GBd-8q-mUi" eventType="touchUpInside" id="fwd-ao-nvS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jnm-Wf-rWb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jnm-Wf-rWb" firstAttribute="trailing" secondItem="Qtf-xZ-PGA" secondAttribute="trailing" constant="16" id="ROB-s1-m14"/>
+                            <constraint firstItem="jnm-Wf-rWb" firstAttribute="trailing" secondItem="1BN-gz-0L5" secondAttribute="trailing" constant="38" id="SWg-8B-ust"/>
+                            <constraint firstItem="1BN-gz-0L5" firstAttribute="top" secondItem="jnm-Wf-rWb" secondAttribute="top" constant="387" id="Sic-bY-F3M"/>
+                            <constraint firstItem="p3d-An-UKf" firstAttribute="leading" secondItem="jnm-Wf-rWb" secondAttribute="leading" constant="49" id="dlL-2I-Urd"/>
                             <constraint firstItem="Qtf-xZ-PGA" firstAttribute="leading" secondItem="jnm-Wf-rWb" secondAttribute="leading" constant="16" id="lfi-BL-o3I"/>
                             <constraint firstItem="jnm-Wf-rWb" firstAttribute="bottom" secondItem="Qtf-xZ-PGA" secondAttribute="bottom" constant="10" id="qpO-Jo-F9W"/>
+                            <constraint firstItem="p3d-An-UKf" firstAttribute="top" secondItem="jnm-Wf-rWb" secondAttribute="top" constant="387" id="rXs-ZD-w7t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Aw9-I0-de6"/>
                     <connections>
                         <outlet property="animatingView" destination="18m-3I-8ER" id="45M-IJ-Bqn"/>
                         <outlet property="centerImageView" destination="Dfe-HA-Rr2" id="Mgt-iK-hTL"/>
+                        <outlet property="startAnimation" destination="p3d-An-UKf" id="yp3-l3-Vnp"/>
+                        <outlet property="stopAnimation" destination="1BN-gz-0L5" id="A8e-7g-MD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0MV-a2-ov1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="-120"/>
+            <point key="canvasLocation" x="1409.9236641221373" y="-120.42253521126761"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="taQ-53-8Pd">
@@ -192,6 +228,9 @@
         <image name="mingcute_send-fill (1)" width="70" height="38"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
