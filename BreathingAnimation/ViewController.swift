@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate {
     
     @IBOutlet weak var mainView: UIView!{
         didSet {
@@ -24,6 +24,12 @@ class ViewController: UIViewController {
             setupViews()
             startBreathingAnimation()
         }
+    
+    
+    @IBAction func goToNextVC(_ sender: UIButton) {
+      let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
     
         // MARK: - Setup circular shapes
         private func setupViews() {
